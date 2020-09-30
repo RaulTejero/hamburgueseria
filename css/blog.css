@@ -20,7 +20,7 @@ main #blog h3 {
 }
 main #blog  h4 {
     margin: 1em 0;
-color: var(--color-principal);
+    color: var(--color-principal);
 }
 main #blog.container {
     padding-bottom: 100px;

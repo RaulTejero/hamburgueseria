@@ -1,0 +1,311 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
+
+/*
+    handlee y monstserrat 400, 700
+    font-family: 'Handlee', cursive;
+    font-family: 'Montserrat', sans-serif;
+*/
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-principal: #fa573a;
+    --color-secundario: #21242e;
+    --fuentePrincipal: 'Montserrat', sans-serif;
+    --fuenteSecundaria: 'Handlee', cursive;
+    --anchoMaximo: 1100px;
+    --gris: #aaa;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    font-size: 1em;
+}
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.container {
+    max-width: var(--anchoMaximo);
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+}
+
+/* header  */
+
+header .nav_top {
+    background-color: var(--color-secundario);
+    padding: 20px 10px;
+}
+header .nav_top a {
+    color: white;
+    font-size: 120%;
+    text-decoration: none;
+}
+header .nav_top a span {
+    display: none;
+}
+header .nav_top a i {
+    color: var(--color-principal);
+}
+header .nav_top .row {
+    justify-content: space-between;
+}
+header nav {
+    padding: 20px 10px;
+}
+header .hamburguesa {
+    width: 50px;
+    cursor: pointer;
+}
+header .hamburguesa div {
+    border-top: 2px solid var(--gris);
+    margin: 10px;
+}
+header nav .row {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+header nav ul {
+    width: 100%;
+}
+header nav .logo {
+    max-width: 110px;
+}
+header nav ul li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    color: var(--gris);
+    border-bottom: 1px solid var(--gris);
+}
+header nav ul li a:hover {
+    color: var(--color-principal);
+}
+header nav ul li .activo {
+    color: var(--color-principal);
+}
+
+@media(min-width: 48em) {
+    header .nav_top a span {
+        display: inline;
+    }
+}
+
+@media(min-width: 62.750em) {
+    header .hamburguesa {
+        display: none;
+    }
+    header nav ul {
+        width: auto;
+    }
+    header nav ul li {
+        display: inline-block;
+    }
+    header nav ul li a {
+        padding: 5px 20px;
+        border-bottom: none;
+    }
+}
+
+
+/* inicio hero */
+
+.hero {
+    background-image: url('../images/fondo.jpg');
+    background-color: #999;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    padding: 15% 10px;
+}
+.hero h1 {
+    font-family: var(--fuenteSecundaria);
+    color: white;
+    font-size: 2.5em;
+}
+.hero h2 {
+    color: var(--color-principal);
+    font-size: 1.5em;
+    margin: 1em 0;
+}
+.hero p {
+    color: white;
+    font-size: 1.10em;
+}
+.boton {
+    display: inline-block;
+    background-color: var(--color-principal);
+    color: white;
+    padding: 1.15em;
+    text-decoration: none;
+    margin: 1em 0;
+    border: 1px solid var(--color-principal);
+}
+.boton:hover {
+    background-color: transparent;
+    color: var(--color-principal);
+}
+.boton i {
+    transition: 0.5s;
+}
+.boton:hover i {
+    transform: translateX(5px);
+}
+.hero ul li {
+    display: inline-block;
+    font-size: 2em;
+    margin-right: 1em;
+}
+.hero ul li a {
+    color: white;
+}
+
+/* inicio main section ourservices */
+
+main section {
+    padding: 2.125em 0.825em;
+}
+main section h2 {
+    color: black;
+    font-family: var(--fuenteSecundaria);
+    font-size: 2em;
+    text-align: center;
+}
+main section h2 span {
+    color: var(--color-principal);
+}
+main section .underline {
+    position: relative;
+    width: 5em;
+    margin: 0 auto;
+    color: var(--color-principal);
+    font-weight: 700;
+    margin-bottom: 2em;
+    text-align: center;
+}
+main section .underline hr {
+    position: absolute;
+    width: 100%;
+    top: -0.063em;
+    border-color: var(--color-principal);
+}
+main #ourservices .row {
+    flex-wrap: wrap;
+}
+main #ourservices article {
+    border-bottom: 1px solid var(--gris);
+    padding: 1.825em 0;
+}
+main #ourservices article div i {
+    color: var(--color-principal);
+    font-size: 2em;
+    border: 2px solid var(--color-principal);
+    padding: 0.8rem;
+}
+main #ourservices article .fa-truck {
+    transform: rotateY(180deg);
+}
+main #ourservices article h3 {
+    margin: 1em 0;
+    font-weight: 700;
+}
+.enlace {
+    text-decoration: none;
+    color: var(--color-principal);
+    margin: 1em 0 0 0;
+    display: block;
+}
+
+@media(min-width: 48em) {
+    main #ourservices article {
+        width: 50%;
+        border-bottom: 0px;
+        border-left: 1px solid var(--gris);
+        padding: 1.825em;
+        margin-bottom: 1em;
+    }
+    main #ourservices article:last-child {
+        width: 100%;
+    }
+}
+
+@media(min-width: 62.750em) {
+    main #ourservices article, main #ourservices article:last-child {
+        width: 33.333%;
+    }
+}
+
+
+/* inicio main section about us */
+
+main #aboutus {
+    padding-bottom: 100px;
+}
+main #aboutus .row {
+    flex-wrap: wrap;
+}
+main #aboutus h3 {
+    font-weight: 700;
+}
+main #aboutus h4 {
+    margin: 1em 0;
+    color: var(--color-principal);
+}
+main #aboutus .marco {
+    margin: 15px 0;
+    border: 3px solid var(--color-principal);
+    transform: rotateZ(10deg);
+    width: 90%;
+    transition: 1s;
+}
+main #aboutus .marco img {
+    transform: rotateZ(-10deg);
+    transition: 1s;
+}
+main #aboutus .columna:hover .marco, main #aboutus .columna:hover .marco img {
+    transform: rotateZ(0deg);
+}
+@media(min-width: 48.000em) {
+    main #aboutus .marco {
+        margin: 0px 15px;
+    }
+    main #aboutus .columna:first-child {
+        width: 40%;
+    }
+    main #aboutus .columna:last-child {
+        width: 60%;
+    }
+}
+
+/* inicio footer */
+
+footer {
+    background-color: var(--color-secundario);
+    padding: 20px 10px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    margin-top: 20px;
+    bottom: 0px;
+}
+footer a {
+    color: white;
+}
+footer a:hover {
+    text-decoration: none;
+}
+
+@media(min-width: 48em) {
+    footer {
+        text-align: left;
+    }
+}

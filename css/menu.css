@@ -1,0 +1,30 @@
+@import url(style.css);
+ main>div.dark >section #menu .container {
+    background-color:var(--color-secundario);
+    max-width: 900px;
+    }
+div.wrapper >main >section #menu .container > h2 {
+    color: white !important;
+    font-weight: 700;
+}
+
+main section#menu div aside {
+    color: white;
+}
+main section#menu div aside ul {
+ margin-bottom: 10em;
+}
+main section#menu div aside a{
+ display: block;
+}
+main section#menu div aside h3 {
+    font-weight: 700;
+}
+main section#menu div aside hr{
+    color: var(--color-principal);
+    font-weight: 700;
+    margin: 1em 0;
+    
+    width: 5em;
+    margin-left: 0;
+}

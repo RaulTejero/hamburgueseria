@@ -32,4 +32,7 @@ main #blog.container {
         padding: 1.825em;
         margin-bottom: 1em;
     }
+    main #blog article:last-child {
+        width: 33.333%;
+    }
 }

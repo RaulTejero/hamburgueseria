@@ -418,30 +418,18 @@ main section#menu div.row>div:last-child article div.row button {
     padding: 0;
     margin: 0;
 }
-@media(min-width: 48em) {
+@media(min-width: 48.00em) {
+    
     main>div.dark>section#menu.container>div.row:nth-child(3) {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
     main section#menu>div.row>aside {
-        width: 40%;
+        width: 25%;
     }
     main section#menu>div.row>div:last-child {
-        width: 50%;
-        margin: 0;
-    }
-    main section#menu div.row>div:last-child article div.row h3 {
-        width: 85%;
-    }
-}
-@media(min-width: 75.000em) {
-    
-    main section#menu>div.row>aside {
-        width: 30%;
-    }
-    main section#menu>div.row>div:last-child {
-        width: 60%;
+        width: 65%;
         margin: 0;
     }
     main section#menu>div.row>div:last-child article {
@@ -454,9 +442,12 @@ main section#menu div.row>div:last-child article div.row button {
         width: 18em;
         margin-right: 1em;
     }
+    main section#menu>div.row>div:last-child article h3 {
+        width: 79%;
+    }
     main section#menu>div.row>div:last-child article div {
         width: 60%;
-        font-size: 1.3em;
+        font-size: 1em;
     }
     main section#menu div.row > div:last-child article div.row {
         padding: 0;

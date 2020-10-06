@@ -311,6 +311,9 @@ footer a:hover {
         text-align: left;
     }
 }
+
+
+/* blog */
 main #blog article {
     width: 50%;
     border-bottom: 0px;
@@ -325,6 +328,21 @@ main #blog .row{
 }
 main #blog  article div:first-child {
     margin-bottom: 1em;
+}
+main section#blog.container>div.row div.date {
+    position: absolute;
+    background-color: rgba(255, 125, 4, 0.712);
+    color: white;
+    background-blend-mode: multiply;
+    padding: 1vw;
+}
+main section#blog.container>div.row div.date :first-child  {
+    text-align: center;
+    font-weight: 700;
+}
+main section#blog.container>div.row div.date :last-child {
+    font-weight: 700;
+    text-align: center;
 }
 main #blog h3 {
     font-weight: 700;
